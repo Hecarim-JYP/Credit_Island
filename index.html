@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>이수 퀘스트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="field"></canvas>
+    <div id="hud"></div>
+    <div id="dpad" aria-hidden="true">
+      <button data-dir="up">▲</button>
+      <button data-dir="left">◀</button>
+      <button data-dir="right">▶</button>
+      <button data-dir="down">▼</button>
+    </div>
+    <div id="ui"></div>
+    <div id="toasts"></div>
+  </div>
+  <!-- 개념형 문제 은행 (data.js보다 먼저) -->
+  <script src="js/banks/extra.js"></script>
+  <script src="js/banks/cpp.js"></script>
+  <script src="js/banks/unix.js"></script>
+  <script src="js/banks/os.js"></script>
+  <script src="js/banks/pl.js"></script>
+  <script src="js/banks/cloud.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
